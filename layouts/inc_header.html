@@ -1,0 +1,76 @@
+<div id="headerV2">
+	<div class="wrapper">
+		<div class="headerV2">
+			<div class="column logo first">
+				<h1>Máy lạnh chính hãng, máy lạnh cao cấp
+					<a href='index.html' target='_self' title=''>
+						<img src='uploads/weblink/logo_sieuthimaylanh_new_2019_01.svg' width='247' alt=''  class='banner-ads' onclick='APP.clickBanner(220);' />
+					</a>
+				</h1>
+			</div>
+			<div class="column form-box-search middle">				
+				<script language="javascript" >
+					function check_search(f)
+					{
+						var key_default = "Bạn muốn tìm gì ?" ;
+						var keyword = f.keyword.value;      
+						var key_len = f.keyword.value.length;
+						if( (keyword==key_default) || (keyword=='') )       {
+							alert("Vui lòng nhập từ khóa");
+							f.keyword.focus();
+							return false;
+						}
+						if( key_len<2 ){
+							alert("Từ khóa tới thiểu là 2 ký tự");
+							f.keyword.focus();
+							return false;
+						} 
+						return true;
+					}   
+
+				</script>
+				<form id="formSearch" name="formSearch" method="get" action="" onSubmit="return check_search(this);" class="box_search">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td width="160">
+								<input name="keyword" id="keyword" type="text" class="text_search"  onfocus="if(this.value=='Bạn muốn tìm gì ?') this.value='';" onBlur="if(this.value=='') this.value='Bạn muốn tìm gì ?';"  value="Bạn muốn tìm gì ?"/>
+							</td>
+							<td align="left" width="25">
+								<button  id="btn-search" type="submit" class="" value="Tìm" >
+									<span >
+										<i class="fa fa-search"></i>
+									</span>
+								</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div class="column last">
+				<ul>					
+					<li class='icon hang-chinh-hang'>
+						<a href='' target='_self'><span>57 Song Hành<br>P. An Phú, Q2</span></a>
+					</li>
+					<li class='icon gia-canh-tranh'>
+						<a href='' target='_self'><span>Trên 17 năm<br/>Kinh Nghiệm</span></a>
+					</li>
+					<li class='icon lap-dat-chuyen-nghiep'>
+						<a href='lap-dat-may-lanh-chuyen-nghiep.html' target='_self'><span>Lắp đặt<br>chuyên nghiệp</span></a>
+					</li>
+					<li class="open-house last">
+						<div><span class="fa-clock-o">Open: T2-CN (8:00 – 17:00)</span></div>
+						<div><span class="fa-phone"><strong>0909 811 373 - 090 282 0616</strong></span></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- MENU MOBILE -->
+		<div class="menu_mobile">
+			<div class="icon_menu">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
+		<!-- MENU MOBILE -->
+		<a class="btnCart fa-shopping-cart hide" href=""></a>
+	</div>
+</div>
